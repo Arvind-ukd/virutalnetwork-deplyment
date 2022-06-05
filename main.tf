@@ -1,7 +1,7 @@
 
 resource "azurerm_virtual_network" "example" {
   name                = "vnet-ci-terraform-code"
-  location            = data.azurerm_resource_group.example.name
+  location            = "Central India"
   resource_group_name = data.azurerm_resource_group.example.id
   address_space       = ["172.0.0.0/16"]
   
