@@ -1,4 +1,7 @@
 data "azurerm_resource_group" "example" {
   name = "rg-terraform-arvind"
-  location = "Central India"
+}
+
+output "id" {
+  value = data.azurerm_resource_group.example.id
 }
